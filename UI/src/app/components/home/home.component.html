@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Land Marks</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> {{name}}</a></li>
+      <li><a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="input-group col-md-6 col-md-offset-3">
+  <span class="input-group-addon">Search</span>
+  <input id="msg" #txt type="text" class="form-control" name="msg" placeholder="Search by note or username" [(ngModel)]="searchText" (keyup)="onSearch(txt.value)">
+</div>
+
+<div class="map" fxFlex="1 1 100%" #map>
+<agm-map
+        [fullscreenControl]="true"
+        [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" 
+        [zoomControl]="false" (mapClick)="mapClicked($event)">
+
+  <agm-marker 
+    *ngFor="let m of markers; let i = index"
+      (markerClick)="clickedMarker(m.lat, m.lng, m.markerData)"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [label]="m.label"
+      [markerDraggable]="m.draggable"
+      (dragEnd)="markerDragEnd(m, $event)">
+    
+      <agm-info-window>
+        <form (ngSubmit)="onSubmit(m,f,notesArea.value,m.lat,m.lng)"   name="form"  #f="ngForm">
+          <label>Notes</label>
+          {{m.markerData.userId}} -- {{userId}}
+          <textarea #notesArea [disabled]="!m.isActive">{{m.markerData.text}} </textarea>
+          <button type="submit" [disabled]="!m.isActive">Submit</button>
+        </form>
+      </agm-info-window>
+  </agm-marker>
+</agm-map>
+</div>
