@@ -13,8 +13,9 @@ Technology Stack:
 Time Spent: 5 hours
 .Net core is cross platform and can be deployed on all platforms like windows, linux etc. This layer contains user management, Repositories, DI and tests. 
 	
-	*User Authentication : Used simple JWT authentication. For simplicity resource layer owns the authentication responsibilty. in actual scenario authentication layer should be a separate layer.
-	*Tests Layer : nUnit and moq is used for tests. inMemoryDB is used for this layer.
+	*	User Authentication : Used simple JWT authentication. For simplicity resource layer owns the authentication responsibilty. in actual scenario authentication layer should be a separate layer.
+	
+	*	Tests Layer : nUnit and moq is used for tests. inMemoryDB is used for this layer.
 
 #	Frontend Application
 Technology Stack:
