@@ -76,34 +76,5 @@ namespace TigerSpikeLandMarks.Repositories
         }
 
         #endregion
-        #region Notes
-        //public Note GetNote(int id)
-        //{
-        //    return _dbContext.Notes.Find(id);
-        //}
-        //public Note GetNote(string userId, int landmarkId)
-        //{
-        //    return _dbContext.Notes.FirstOrDefault(n => n.UserId == userId && n.LandMarkId == landmarkId);
-        //}
-        //public List<Note> GetNotesBuUserId(string userId)
-        //{
-        //    return _dbContext.Notes.Where(n => n.UserId == userId).ToList();
-        //}
-        //public List<Note> GetNotesByLandMarkId(int landmarkId)
-        //{
-        //    return _dbContext.Notes.Where(n => n.LandMarkId == landmarkId).ToList();
-        //}
-        //public void AddNote(Note note)
-        //{
-        //    _dbContext.Notes.Add(note);
-        //    _dbContext.SaveChanges();
-        //}
-        //public void UpdateNote(Note note)
-        //{
-        //    _dbContext.Notes.Update(note);
-        //    _dbContext.SaveChanges();
-        //}
-        #endregion
-
     }
 }

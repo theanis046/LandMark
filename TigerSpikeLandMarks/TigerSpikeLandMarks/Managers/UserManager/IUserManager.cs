@@ -123,7 +123,6 @@ namespace TigerSpikeLandMarks.Managers.UserManager
             }
         }
 
-        // private helper methods
 
         private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
