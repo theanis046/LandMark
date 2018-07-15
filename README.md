@@ -10,6 +10,7 @@ Technology Stack:
 *	Visual Studio 2017
 *	Moq
 *	nUnit
+
 Time Spent: 5 hours
 .Net core is cross platform and can be deployed on all platforms like windows, linux etc. This layer contains user management, Repositories, DI and tests. 
 	
