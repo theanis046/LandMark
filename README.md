@@ -2,6 +2,16 @@
 # Introduction
 This application helps user to save notes on map coordinates and view notes saved by other users.
 
+#	Implicit Requirement
+*	User Management
+*	Authentication
+*	Persistance
+*	User Can only view others data(cannot update others notes)
+
+#	Limitation
+This application uses Javascript Navigator, so it asks for access to current location. If access is not given than user cannot see his current location.
+
+
 #	Backend Application
 Technology Stack: 
 *	ASP .NET Core 2.0
