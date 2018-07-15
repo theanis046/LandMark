@@ -18,10 +18,11 @@ Time Spent: 5 hours
 
 #	Frontend Application
 Technology Stack:
-	*Angular 5
-	*Angular Google Map(AGM) package
-	*Bootstrap
-	*VScode
+*	Angular 5
+*	Angular Google Map(AGM) package
+*	Bootstrap
+*	VScode
+
 Time Spent: 8 hours
 More time was spent on this layer. Implemented HttpInterceptors, RouteGuards, Authentication Service etc
 
