@@ -12,15 +12,15 @@ Technology Stack:
 *	nUnit
 Time Spent: 5 hours
 .Net core is cross platform and can be deployed on all platforms like windows, linux etc. This layer contains user management, Repositories, DI and tests. 
-*User Authentication : Used simple JWT authentication. For simplicity resource layer owns the authentication responsibilty. in actual scenario authentication layer should be a separate layer.
-*Tests Layer : nUnit and moq is used for tests. inMemoryDB is used for this layer.
+	*User Authentication : Used simple JWT authentication. For simplicity resource layer owns the authentication responsibilty. in actual scenario authentication layer should be a separate layer.
+	*Tests Layer : nUnit and moq is used for tests. inMemoryDB is used for this layer.
 
 #	Frontend Application
 Technology Stack:
-*	Angular 5
-*	Angular Google Map(AGM) package
-*	Bootstrap
-*	VScode
+	*	Angular 5
+	*	Angular Google Map(AGM) package
+	*	Bootstrap
+	*	VScode
 Time Spent: 8 hours
 More time was spent on this layer. Implemented HttpInterceptors, RouteGuards, Authentication Service etc
 
